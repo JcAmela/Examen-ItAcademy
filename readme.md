@@ -1,16 +1,23 @@
-🌬️ Proyecto de Gestión de Cámaras de Enfriamiento
-Este proyecto es un sistema de gestión de cámaras de enfriamiento, que permite al usuario manejar diferentes características y equipos de cada cámara. Utiliza JavaScript, TypeScript, y Bootstrap 5 para crear una experiencia de usuario fluida y moderna, siguiendo las mejores prácticas y técnicas de programación.
+# 🌱 IT Academy Barcelona Activa - Proyecto de Cámaras de Enfriamiento 🌱
+¡Hola! Soy [tu nombre], estudiante en IT Academy Barcelona Activa. Este repositorio contiene mi proyecto de examen que se enfoca en la gestión de cámaras de enfriamiento.
 
-⭐ Características
-📝 Registro y manejo de múltiples cámaras de enfriamiento.
-❄️ Cada cámara puede tener múltiples equipos de enfriamiento con características individuales.
-🎨 Diseño limpio y moderno gracias al uso de Bootstrap 5.
-🧾 Validación completa de formularios para garantizar la integridad de los datos.
-❗ Manejo de errores robusto y guía de usuario para facilitar la corrección de errores.
-🚀 ¿Por qué este proyecto es único?
-Este proyecto demuestra un entendimiento profundo de JavaScript y TypeScript, así como la capacidad de crear interfaces de usuario intuitivas y responsivas con Bootstrap 5. La combinación de estas habilidades, junto con el manejo de errores y la validación de formularios, hace que este proyecto sea una excelente muestra de mis habilidades como desarrollador frontend.
+Este es un proyecto pequeño, pero significativo, que me permitió practicar y demostrar lo que he aprendido en JavaScript, TypeScript y Bootstrap 5, con un énfasis en los principios de la Programación Orientada a Objetos y la manipulación del DOM. Si quieres ver cómo funciona la aplicación, puedes hacerlo [aquí](https://jcamela.github.io/examen_ItAcademy.github.io/).
 
-Si eres una empresa buscando un desarrollador frontend apasionado, ¡no dudes en ponerse en contacto!
+## 🎯 Características y Funcionalidades
+### 📘 Registro de Cámaras de Enfriamiento
+El objetivo de la aplicación es permitir el registro de una cámara de enfriamiento con detalles como el nombre, la dirección y el precio máximo de inversión.
 
-💡 ¿Quieres más?
-Si te ha gustado este proyecto, no dudes en explorar el resto de mi portfolio. ¡Siempre estoy trabajando en nuevos proyectos y aprendiendo nuevas tecnologías!
+### 📗 Registro de Equipos de Enfriamiento
+Una vez que se registra una cámara, se pueden añadir hasta cuatro equipos de enfriamiento a esa cámara. Cada equipo tiene un volumen, una cantidad de frigorías y un precio.
+
+### 📙 Validación de Formularios
+He implementado validaciones de formulario para asegurar la integridad de los datos. Estas validaciones también ofrecen retroalimentación visual al usuario.
+
+### 📕 Manejo de Errores
+La aplicación proporciona mensajes de error claros y útiles para guiar al usuario cuando algo no va bien.
+
+## 💻 Código
+Estoy compartiendo todo el código aquí para que puedas echar un vistazo. Si tienes algún consejo o sugerencia para mejorar el código, estaré más que agradecido de escucharlo.
+
+## 🌐 Recursos
+Todos los recursos y materiales que he utilizado para este proyecto fueron proporcionados por IT Academy Barcelona Activa.
