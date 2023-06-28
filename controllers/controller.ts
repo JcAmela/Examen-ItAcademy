@@ -2,7 +2,7 @@ let camara: Camara
 
 let letrasRegex = /^[A-Za-z]+$/;
 let numerosRegex = /^[0-9]+$/;
-let direccionRegex = /^[A-Za-z\s]+(\d+|s\/n)$/;
+let direccionRegex = /^[a-zA-Z0-9 ]*$/;
 
 
 function submitCamara() {
