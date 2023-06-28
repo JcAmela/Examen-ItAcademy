@@ -1,5 +1,5 @@
 # 🌱 IT Academy Barcelona Activa - Proyecto de Cámaras de Enfriamiento 🌱
-¡Hola! Soy [tu nombre], estudiante en IT Academy Barcelona Activa. Este repositorio contiene mi proyecto de examen que se enfoca en la gestión de cámaras de enfriamiento.
+¡Hola! Soy Juan Carlos Amela, estudiante en IT Academy Barcelona Activa. Este repositorio contiene mi examen que se enfoca en la gestión de cámaras de enfriamiento.
 
 Este es un proyecto pequeño, pero significativo, que me permitió practicar y demostrar lo que he aprendido en JavaScript, TypeScript y Bootstrap 5, con un énfasis en los principios de la Programación Orientada a Objetos y la manipulación del DOM. Si quieres ver cómo funciona la aplicación, puedes hacerlo [aquí](https://jcamela.github.io/examen_ItAcademy.github.io/).
 
