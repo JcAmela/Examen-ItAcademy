@@ -17,21 +17,21 @@ function submitCamara() {
     precioMaxInput.classList.remove('is-valid', 'is-invalid');
 
 
-    if (!letrasRegex.test(nombreInput.value) ||nombreInput.value.length < 3) {
+    if (!letrasRegex.test(nombreInput.value) || nombreInput.value.length < 3) {
         errores++;
             nombreInput.classList.add('is-invalid');
     }else{
         nombreInput.classList.add('is-valid');
     }
 
-    if (!direccionRegex.test(direccionInput.value) ||direccionInput.value.length < 3) {
+    if (!direccionRegex.test(direccionInput.value) || direccionInput.value.length < 3) {
         errores++;
         direccionInput.classList.add('is-invalid');
     }else{
         direccionInput.classList.add('is-valid');
     }
 
-    if (!numerosRegex.test(precioMaxInput.value)||precioMaxInput.value.length < 3 ) {
+    if (!numerosRegex.test(precioMaxInput.value)|| precioMaxInput.value.length < 3 ) {
         errores++;
         precioMaxInput.classList.add('is-invalid');
     }else{

@@ -2,6 +2,7 @@
 var camara;
 var letrasRegex = /^[A-Za-z]+$/;
 var numerosRegex = /^[0-9]+$/;
+var direccionRegex = /^[a-zA-Z0-9 ]*$/;
 function submitCamara() {
     var errores = 0;
     var nombreInput = document.getElementById("nombreInput");
@@ -17,7 +18,7 @@ function submitCamara() {
     else {
         nombreInput.classList.add('is-valid');
     }
-    if (!letrasRegex.test(direccionInput.value) || direccionInput.value.length < 3) {
+    if (!direccionRegex.test(direccionInput.value) || direccionInput.value.length < 3) {
         errores++;
         direccionInput.classList.add('is-invalid');
     }
@@ -32,7 +33,7 @@ function submitCamara() {
         precioMaxInput.classList.add('is-valid');
     }
     if (errores > 0) {
-        console.log('Error. Rellena bien los campos con un mínimo de 3 caracteres. Asegúrate de ingresar letras en los campos "nombre" y "dirección", y números en el campo "precio máximo". <Por cierto... si eres mi profesor me merezco un 10!! son las 23:07h de la noche >.<....> (XDDD, es coña, bueno... no es coña, nose (o.O), tú mismo :D)');
+        console.log('Error. Rellena bien los campos con un mínimo de 3 caracteres. Asegúrate de ingresar letras en los campos "nombre" y "dirección", y números en el campo "precio máximo"');
     }
     else {
         camara = new Camara(nombreInput.value, Number(precioMaxInput.value), direccionInput.value);
@@ -93,7 +94,7 @@ function submitequipoForm() {
         }
     }
     if (errores > 0) {
-        console.log('Error. Rellena bien los campos con un mínimo de 3 caracteres. Asegúrate de ingresar letras en el campo "Frigorias del enfriador", y números en los campos "Volumen del enfriador" y "Precio del enfriador". Además, el total del precio de los equipos no debe superar el precio máximo. <Parte 2, si eres mi profesor me merezco un "12<plus!!>" son las 0:23h de la noche >.<....> (Aumentando mi delirio * 99999mil de hype porque ya he acabado!! Bnaniitt :D)');
+        console.log('Error. Rellena bien los campos con un mínimo de 3 caracteres. Asegúrate de ingresar letras en el campo "Frigorias del enfriador", y números en los campos "Volumen del enfriador" y "Precio del enfriador". Además, el total del precio de los equipos no debe superar el precio máximo');
     }
     else {
         console.log(camara);
