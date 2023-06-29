@@ -63,7 +63,7 @@ function showMachine() {
 
 function submitEquipoForm() {
     let errores = 0;
-
+    camara.limpiarEquipos();
     for (let i = 1; i <= 4; i++) {
         let volumenEnfriadorEquipo = <HTMLInputElement>document.getElementById("volumenEnfriador" + i);
         let frigoriasEnfriadorEquipo = <HTMLInputElement>document.getElementById("frigoriasEnfriador" + i);

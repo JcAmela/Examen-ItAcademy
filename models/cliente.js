@@ -1,13 +1,16 @@
 "use strict";
 var Camara = /** @class */ (function () {
     function Camara(nombre, precioMax, direccion) {
-        this.equipos = new Array();
+        this.equipos = [];
         this.nombre = nombre;
         this.precioMax = precioMax;
         this.direccion = direccion;
     }
     Camara.prototype.addEquipo = function (Equipo) {
         this.equipos.push(Equipo);
+    };
+    Camara.prototype.limpiarEquipos = function () {
+        this.equipos = [];
     };
     Object.defineProperty(Camara.prototype, "totalPrecioEquipos", {
         get: function () {

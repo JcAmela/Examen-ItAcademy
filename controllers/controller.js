@@ -53,6 +53,7 @@ function showMachine() {
 }
 function submitEquipoForm() {
     var errores = 0;
+    camara.limpiarEquipos();
     for (var i = 1; i <= 4; i++) {
         var volumenEnfriadorEquipo = document.getElementById("volumenEnfriador" + i);
         var frigoriasEnfriadorEquipo = document.getElementById("frigoriasEnfriador" + i);

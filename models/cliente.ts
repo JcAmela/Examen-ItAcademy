@@ -1,17 +1,21 @@
-class Camara{
-    nombre:string;
-    precioMax:number;
-    direccion:string;
-    equipos:Equipo[]=new Array();
+class Camara {
+    nombre: string;
+    precioMax: number;
+    direccion: string;
+    equipos: Equipo[] = [];
 
-    constructor(nombre:string,precioMax:number,direccion:string){
-        this.nombre=nombre;
-        this.precioMax=precioMax;
-        this.direccion=direccion;
+    constructor(nombre: string, precioMax: number, direccion: string) {
+        this.nombre = nombre;
+        this.precioMax = precioMax;
+        this.direccion = direccion;
     }
     
-    addEquipo(Equipo:Equipo):void{
+    addEquipo(Equipo: Equipo): void {
         this.equipos.push(Equipo);
+    }
+
+    limpiarEquipos(): void {
+        this.equipos = [];
     }
 
     get totalPrecioEquipos(): number {
