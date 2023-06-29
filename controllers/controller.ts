@@ -1,7 +1,7 @@
 let camara: Camara
 
 let letrasRegex = /^[A-Za-z]+$/;
-let numerosRegex = /^[0-9]+$/;
+let numerosRegex = /^[+-]?(\d+([.,]\d*)?|[.,]\d+)$/;
 let direccionRegex = /^[a-zA-Z0-9 ]*$/;
 
 
@@ -43,12 +43,12 @@ function submitCamara() {
         console.log('Error. Rellena bien los campos con un mínimo de 3 caracteres. Asegúrate de ingresar letras en los campos "nombre" y "dirección", y números en el campo "precio máximo"')
     } else {
         camara = new Camara(nombreInput.value, Number(precioMaxInput.value), direccionInput.value);
-        showVehicle();
-        showequipoForm();
+        showMachine();
+        showquipoForm();
     }
 }
 
-function showVehicle() {
+function showMachine() {
     let camaraTitle = <HTMLInputElement>document.getElementById("camaraTitle");
     let nombreOutput = <HTMLInputElement>document.getElementById("nombreOutput");
     let direccionOutput = <HTMLInputElement>document.getElementById("direccionOutput");
@@ -61,7 +61,7 @@ function showVehicle() {
 
 }
 
-function submitequipoForm() {
+function submitEquipoForm() {
     let errores = 0;
 
     for (let i = 1; i <= 4; i++) {
@@ -110,12 +110,12 @@ function submitequipoForm() {
         console.log('Error. Rellena bien los campos con un mínimo de 3 caracteres. Asegúrate de ingresar letras en el campo "Frigorias del enfriador", y números en los campos "Volumen del enfriador" y "Precio del enfriador". Además, el total del precio de los equipos no debe superar el precio máximo');
     } else {
         console.log(camara);
-        showequipos();
+        showEquipos();
     }
 }
 
 
-function showequipos() {
+function showEquipos() {
     let equipoTitle = <HTMLInputElement>document.getElementById("equipoTitle");
     let equipoOutput1 = <HTMLInputElement>document.getElementById("equipoOutput1");
     let equipoOutput2 = <HTMLInputElement>document.getElementById("equipoOutput2");
@@ -130,7 +130,7 @@ function showequipos() {
 }
 
 
-function showequipoForm() {
+function showquipoForm() {
     let camaraForm = <HTMLInputElement>document.getElementById("create-camara-form");
     let camaraEquipo = <HTMLInputElement>document.getElementById("create-equipo-form");
     camaraForm.style.display = "none";

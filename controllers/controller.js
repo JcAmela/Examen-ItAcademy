@@ -1,7 +1,7 @@
 "use strict";
 var camara;
 var letrasRegex = /^[A-Za-z]+$/;
-var numerosRegex = /^[0-9]+$/;
+var numerosRegex = /^[+-]?(\d+([.,]\d*)?|[.,]\d+)$/;
 var direccionRegex = /^[a-zA-Z0-9 ]*$/;
 function submitCamara() {
     var errores = 0;
@@ -37,11 +37,11 @@ function submitCamara() {
     }
     else {
         camara = new Camara(nombreInput.value, Number(precioMaxInput.value), direccionInput.value);
-        showVehicle();
-        showequipoForm();
+        showMachine();
+        showquipoForm();
     }
 }
-function showVehicle() {
+function showMachine() {
     var camaraTitle = document.getElementById("camaraTitle");
     var nombreOutput = document.getElementById("nombreOutput");
     var direccionOutput = document.getElementById("direccionOutput");
@@ -51,7 +51,7 @@ function showVehicle() {
     direccionOutput.innerText = "direccion: " + camara.direccion;
     precioMaxOutput.innerText = "precioMax: " + camara.precioMax;
 }
-function submitequipoForm() {
+function submitEquipoForm() {
     var errores = 0;
     for (var i = 1; i <= 4; i++) {
         var volumenEnfriadorEquipo = document.getElementById("volumenEnfriador" + i);
@@ -98,10 +98,10 @@ function submitequipoForm() {
     }
     else {
         console.log(camara);
-        showequipos();
+        showEquipos();
     }
 }
-function showequipos() {
+function showEquipos() {
     var equipoTitle = document.getElementById("equipoTitle");
     var equipoOutput1 = document.getElementById("equipoOutput1");
     var equipoOutput2 = document.getElementById("equipoOutput2");
@@ -113,7 +113,7 @@ function showequipos() {
     equipoOutput3.innerHTML = "<b>Enfriadora 3:</b><br>  " + "volumen: " + camara.equipos[2].volumenEnfriador + "  <br>Frigorias: " + camara.equipos[2].frigoriasEnfriador + "  <br>precio: " + camara.equipos[2].precioEnfriador;
     equipoOutput4.innerHTML = "<b>Enfriadora 4:</b><br>  " + "volumen: " + camara.equipos[3].volumenEnfriador + "  <br>Frigorias: " + camara.equipos[3].frigoriasEnfriador + "  <br>precio: " + camara.equipos[3].precioEnfriador;
 }
-function showequipoForm() {
+function showquipoForm() {
     var camaraForm = document.getElementById("create-camara-form");
     var camaraEquipo = document.getElementById("create-equipo-form");
     camaraForm.style.display = "none";
